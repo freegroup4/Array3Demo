@@ -1,22 +1,13 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-
 package array3demo;
-
-/**
- *
- * @author Chen-USE
- */
 public class Array3Demo {
-
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        int A[][][] = { {{11,32,65}, {78,94,76}, {79,44,65}, {89,122,73}} , {{32,56,89}, {43,23,32}, {32,56,78}, {94,78,45}}};
+        int i,j,k,max = A[0][0][0];
+        for (int l = 0; l < A.length; l++) 
+            for (int m = 0; m < A[l].length; m++) 
+                for (int n = 0; n < A[l][m].length; n++) 
+                    if (max < A[l][m][n]) 
+                        max = A[l][m][n];
+        System.out.println("max = " + max);
     }
-    
 }
